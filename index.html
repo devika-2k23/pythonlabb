@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Python Lab — Learn, Code, Build</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <h1>Python Lab <small>Learn, Code, Build</small></h1>
+  <select id="topic" aria-label="Topic"></select>
+  <div class="xp"><b id="level"></b><div class="bar"><i id="xpfill"></i></div><span id="xptext"></span></div>
+</header>
+<div id="py-status" class="status" role="status" hidden></div>
+<div class="layout">
+  <nav id="nav" aria-label="Stages"></nav>
+  <main id="main"></main>
+</div>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<!-- Editor (CodeMirror 5). If the CDN is blocked, the app falls back to a plain textarea. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/python/python.min.js"></script>
+<script src="data/lessons.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/python-runner.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
